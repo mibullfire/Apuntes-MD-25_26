@@ -18,7 +18,7 @@ El primer sector se encarga del direccionamiento del resto de sectores. Por lo q
 
 ## Ejercicios
 
-**Un determinado dispositivo tiene los siguientes parámetros:**
+**Ejercicio 1: Un determinado dispositivo tiene los siguientes parámetros:**
 
 - **$2$ caras**
 - **$80$ pistas/cara**
@@ -39,4 +39,15 @@ Si fueran $1048$ Bytes sería: 512 | 512 | 24. Y el sector de $24$ Bytes ya no p
 Para este ejercicio, no supero la capacidad teórica, pero no puedo tener más de 3200 ficheros, por lo que no podría tener los 4000 ficheros que plantea el enunciado.
 
 
+**Ejercicio 2: Un determinado sistema de almacenamiento tiene los siguientes parámetros:**
 
+- **Cilindros: $100$.**
+- **Head: $50$.**
+- **S = $4$.**
+
+||C|H|S|LBA|
+|-------|-------|-------|-------|-------|
+|Primer Sector|0|0|1|0|
+|Último Sector|99|49|3|19999|
+
+`Nota`: el último LBA se calcula con $100\cdot50\cdot4-1$. Número total de sectores, menos 1.
